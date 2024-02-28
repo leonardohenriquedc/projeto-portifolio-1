@@ -2,10 +2,100 @@
 
 
 /* Tabela de cores Mobile:
-
     Roxo azulado: #2C1BDB
     Roxo Escuro: #3D33B1
     Azul Meio Escuro: #1A48DB
     Roxo Escuro azulado: #2A1ADB
 
 */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo principal */
+
+body{
+    background-image: url(../midias/imagens/teste-fundo-mobile-2.jpg);
+}
+
+html{
+
+}
+
+header{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+main#principal{
+    background-color: white;
+}
+
+nav#principal{
+    width: 100%;
+}
+
+/* Itens do Nav */
+
+span#menu-mobile{
+    display: grid;
+    background-image: linear-gradient(to left,  #2C1BDB, #1A48DB);
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+span#menu-mobile > div.line{
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+nav#list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+
+nav#list > ul#list-options{
+    list-style: none;
+    text-align: center;
+}
+
+nav#list > ul#list-options > li{
+    padding: 4px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+/* Itens do Header */
+
+header > div#imagem-header{
+    width: 200px;
+    height: 200px;
+    margin: 3px auto;
+    background-image: url(../midias/imagens/teste-mobile-img-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header > p{
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    -webkit-text-stroke: 0.6px;
+    -webkit-text-stroke-color: black;
+    
+}
