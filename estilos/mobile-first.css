@@ -39,8 +39,6 @@ html{
 
 nav#principal{
     width: 100%;
-    position: sticky;
-    top: 0%;
 }
 
 span#menu-mobile{
@@ -71,7 +69,6 @@ nav#list{
 nav#list > ul#list-options{
     list-style: none;
     text-align: center;
-    
 }
 
 nav#list > ul#list-options > li{
@@ -94,8 +91,6 @@ nav#list > ul#list-options > li{
     animation-delay: 0.2s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
-    
-
 }
 
 nav#list > ul#list-options > li > p{
@@ -145,6 +140,7 @@ header > div#img-d{
     background-color: #2C1BDB;
     border-radius: 50%;
     margin: 4px auto;
+    box-shadow: 1px 1px 7px #110b52;
 }
 
 header > div#img-d > img{
@@ -195,10 +191,6 @@ footer{
     color: white;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 50%;
-    top: calc(100% - 40px);
-    transform: translateX(-50%);
 }
 
 
