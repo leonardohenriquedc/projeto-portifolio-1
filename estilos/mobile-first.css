@@ -19,45 +19,29 @@
 /* Corpo principal */
 
 body{
-    backdrop-filter: blur(6px);
-    background-image: url(../midias/imagens/teste-fundo-mobile-2.jpg);
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: ;
+    background-image: url(../midias/imagens/teste-fundo-geral.jpeg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 html{
-    
-}
-
-header{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 
-/* Configuração para tegs globais */
-main > h1, h2{
-    text-align: center;
-}
-/*--------------------------------*/
 
-main#principal{
-    background-color: white;
-    width: 90%;
-    margin: auto;
-    padding: 10px;
-    border-radius: 3px;
-    display: grid;
-    justify-content: center;
-}
+/* Itens do Nav */
 
 nav#principal{
     width: 100%;
     position: sticky;
     top: 0%;
 }
-
-/* Itens do Nav */
 
 span#menu-mobile{
     display: grid;
@@ -87,6 +71,7 @@ nav#list{
 nav#list > ul#list-options{
     list-style: none;
     text-align: center;
+    
 }
 
 nav#list > ul#list-options > li{
@@ -97,7 +82,7 @@ nav#list > ul#list-options > li{
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     color: white;
-    background-image: linear-gradient(to left, #1a47db69, #2A1ADB69);
+    background-image: linear-gradient(to left, #1a47db94, #2A1ADB94);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,3 +131,82 @@ nav#list > ul#list-options > li > p{
 /*---------------------------------------------*/
 
 /*--------------------------------------------------------------------*/
+
+/* Itens do Header */
+
+header{
+    display: grid;
+    justify-content: center;
+}
+
+header > div#img-d{
+    width: 300px;
+    height: 300px;
+    background-color: #2C1BDB;
+    border-radius: 50%;
+    margin: 4px auto;
+}
+
+header > div#img-d > img{
+
+    /* Animação */
+
+    animation-name: avatarAnimation;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Animação avatar */
+
+@keyframes avatarAnimation {
+    0%{
+       transform: rotate(-20deg); 
+    }
+
+    50%{
+        transform: rotate(20deg);
+    }
+
+    100%{
+        transform: rotate(-20deg);
+    }
+
+}
+/* --------------- */
+
+header > p{
+    text-align: justify;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-indent: 50px;
+}
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: calc(100% - 40px);
+    transform: translateX(-50%);
+}
+
+
+footer > p{
+    font-size: 1.2rem;
+} 
+
+footer > img{
+    color: white;
+    filter: contrast(0%);
+}
