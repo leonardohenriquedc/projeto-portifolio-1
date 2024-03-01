@@ -38,7 +38,7 @@ html{
 /* Itens do Nav */
 
 nav#principal{
-    width: 100%;
+    width: 92%;
 }
 
 span#menu-mobile{
@@ -93,11 +93,16 @@ nav#list > ul#list-options > li{
     animation-timing-function: ease-in-out;
 }
 
-nav#list > ul#list-options > li > p{
-    text-align: right;
+nav#list > ul#list-options > li > a{
+    text-decoration: none;
+    color: white;
 }
 
-
+nav#list > ul#list-options li > a:hover{
+    color: blue;
+    font-size: 1.5em;
+    transition: .7s;
+}
 
 .icons{
     width: 30px;
@@ -180,12 +185,75 @@ header > p{
     text-indent: 50px;
 }
 
+/* Itens do main */
 
+main{
+    display: flex;
+    flex-direction: column;
+}
 
+main > section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    background-color: #312e2e;
+    padding: 10px;
+    border-radius: 7px;
+}
 
+main > section > div{
+    width: 250px;
+    height: 400px;
+    background-color: #201f1f;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+main > section > div#tela-de-login{
+    background-image: url(../midias/imagens/imagens-projetos/tela-pjt-tela-login.PNG);
+}
 
+main > section > div#redes-sociais{
+    background-image: url(../midias/imagens/imagens-projetos/tela-pjt-redes-sociais.PNG);
+}
 
+main > section > div#cr-de-tecnologia{
+    display: flex;
+    overflow: scroll;
+}
+
+main > section > p{
+    color: white;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 7px;
+    margin: 4px;
+    
+}
+
+main > section > a{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 7px;
+
+}
+
+main > section > a:hover{
+    text-decoration: underline;
+    background-color: #ececec;
+    transition: .5s;
+}
+
+/* Itens do footer  */
 footer{
     display: flex;
     color: white;
@@ -202,3 +270,4 @@ footer > img{
     color: white;
     filter: contrast(0%);
 }
+
