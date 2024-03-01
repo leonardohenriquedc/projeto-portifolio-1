@@ -38,7 +38,7 @@ html{
 /* Itens do Nav */
 
 nav#principal{
-    width: 92%;
+    width: 100%;
 }
 
 span#menu-mobile{
@@ -60,7 +60,7 @@ span#menu-mobile > div.line{
 }
 
 nav#list{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding:10px;
@@ -188,7 +188,7 @@ header > p{
 /* Itens do main */
 
 main{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -211,6 +211,7 @@ main > section > div{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 4px;
 }
 
 main > section > div#tela-de-login{
