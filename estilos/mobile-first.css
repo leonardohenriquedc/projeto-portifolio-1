@@ -183,6 +183,7 @@ header > p{
     padding: 20px;
     font-size: 1.5rem;
     text-indent: 50px;
+    line-height: 2rem;
 }
 
 /* Itens do main */
@@ -233,7 +234,6 @@ main > section > p{
     font-size: 1.5rem;
     padding: 7px;
     margin: 4px;
-    
 }
 
 main > section > a{
@@ -245,7 +245,6 @@ main > section > a{
     font-weight: bolder;
     background-color: black;
     border-radius: 7px;
-
 }
 
 main > section > a:hover{
