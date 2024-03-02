@@ -1,1 +1,53 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-image: url(../midias/imagens/teste-fundo-geral.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Itens do nav */
+
+nav#principal{
+    width: 70%;
+    margin: auto;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+span#menu-mobile {
+    display: none;
+}
+
+nav#list, ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav#list > ul li{
+    list-style: none;
+}
+
+nav#list > ul > li > a{
+    text-decoration: none;
+    
+}
+
+.icons{
+    width: 50px;
+}
