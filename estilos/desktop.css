@@ -13,6 +13,7 @@ body{
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+    overflow: hidden;
 }
 
 /* Itens do nav */
@@ -89,6 +90,8 @@ nav#list > ul > li{
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+    padding: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav#list > ul > li > a{
@@ -96,6 +99,18 @@ nav#list > ul > li > a{
 }
 nav#list > ul > li > a:hover{
     text-decoration: underline;
+}
+
+nav#list > ul > li:nth-child(1){
+    border: 1px solid black;
+    background-color: rgb(155, 155, 155);
+    color: black;
+    border-radius: 5px;
+}
+
+nav#list > ul > li:nth-child(1) > a{
+    color: black;
+    font-weight: bolder;
 }
 
 .icons{
@@ -121,6 +136,16 @@ header{
     justify-content: space-around;
 }
 
+/* Animacação para saida do header */
+
+@keyframes saidaHeader {
+    0%{
+        
+    }
+}
+
+/*---------------------------------*/
+ 
 header > div#img-d{
     display: flex;
     width: 400px;
@@ -164,6 +189,111 @@ header > div:nth-child(2) > p{
     padding: 20px;
 }
 
+
+/* Itens do main */
+
+main{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.animacaoMenu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+
+    /* Animação de Entrada */
+    animation-name: mainAp;
+    animation-delay: 0s;
+    animation-duration: 1.5s;
+    animation-timing-function: 1;
+}
+
+@keyframes mainAp {
+    0%{
+        left: -100%;
+    }
+
+    100%{
+        left: 50%;
+    }
+}
+
+main > section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #2e2e2e;
+    margin: 10px;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+
+main > section > div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 400px;
+    height: 500px;
+}
+
+main > section > div#cr-de-tecnologia{
+    display: flex;
+    overflow: scroll;
+}
+
+main > section > div img{
+    width: 300px;
+}
+
+
+main > section > div#tela-de-login{
+    background-image: url(../midias/imagens/imagens-projetos/tela-pjt-tela-login.PNG);
+}
+
+main > section > div#redes-sociais{
+    background-image: url(../midias/imagens/imagens-projetos/tela-pjt-redes-sociais.PNG);
+}
+
+main > section > p{
+    color: white;
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 7px;
+    margin: 4px;
+}
+
+main > section > a{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: black;
+    border-radius: 7px;
+}
+
+main > section > a:hover{
+    text-decoration: underline;
+    background-color: #ececec;
+    transition: .5s;
+    color: black;
+}
+
+
+/* itens do footer */
 footer{
     position: absolute;
     top: calc(100% - 100px);
@@ -174,6 +304,7 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
 
 footer > p{
     font-size: 1.5rem;

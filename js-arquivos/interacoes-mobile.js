@@ -4,6 +4,9 @@ if(window.innerWidth <= '600'){
     let header = document.querySelector("#header")
     header.style.display = 'grid'
 }
+else{
+    list.style.display = 'flex'
+}
 
 }
 
@@ -39,10 +42,14 @@ let main = document.querySelector("#main")
 
 
 // Função home 
+
+//if(window.innerWidth <= '600'){
 function botaoHome(){
-    if(header.style.display === 'none' && main.style.display === 'flex'){
-        header.style.display = 'grid'
-        main.style.display = 'none'
+    if(window.innerWidth <= '600'){
+        if(header.style.display === 'none' && main.style.display === 'flex'){
+            header.style.display = 'grid'
+            main.style.display = 'none'
+        }
     }
 }
 
@@ -51,10 +58,13 @@ btHome.addEventListener('click', botaoHome)
 // Função Portifolio 
 
 function botaoPortifolio(){
-    if(main.style.display === 'none' && header.style.display === 'grid'){
-        main.style.display = 'flex'
-        header.style.display = 'none'
-    } 
+    if(window.innerWidth <= '600'){
+        if(main.style.display === 'none' && header.style.display === 'grid'){
+            main.style.display = 'flex'
+            header.style.display = 'none'
+        } 
+    }
 }
 
 btPortifolio.addEventListener('click', botaoPortifolio)
+

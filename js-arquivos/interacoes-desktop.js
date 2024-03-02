@@ -1,7 +1,9 @@
 
+
 let navp = document.querySelector("#principal")
 let li = document.getElementsByClassName('button')
-
+let header = document.querySelector("#header")
+let main= document.querySelector("#main")
 
 
 //Adicionando classe ao header para desktop 
@@ -19,13 +21,44 @@ function menuResize(){
         navp.classList.add('entreSeisNove')
         navp.classList.remove('acimaNove')
         
+        
     }
-    if(window.innerWidth >=901){
+    if(window.innerWidth >= 901){
         navp.classList.add('acimaNove')
         navp.classList.remove('entreSeisNove')
         li.style.paddingLeft = '15px' 
     }
 }
 
-window.addEventListener('load', menuResize)
+
+function teste(){
+    if(window.innerWidth >= 601){
+    list.style.display = 'flex'
+    }
+}
+
+window.addEventListener('load', menuResize, teste)
 window.addEventListener('resize', menuResize)
+
+// Ajeitando botao portifolio 
+
+function classMain(){
+    if(window.innerWidth >= 601){
+        main.style.display = 'flex'
+        main.setAttribute('class', 'animacaoMenu')
+        header.style.display = 'none'
+    }
+}
+
+function classHeader(){
+    if(window.innerWidth >= 601){
+    main.style.display = 'none'
+    header.style.display =  'flex'
+    }
+}
+
+let botaoHome = document.querySelector("#bt-home")
+botaoHome.addEventListener('click', classHeader)
+
+let botaoPortifolio = document.querySelector("#bt-portifolio")
+botaoPortifolio.addEventListener('click', classMain)
