@@ -1,3 +1,15 @@
+
+function menuMResize(){
+if(window.innerWidth <= '600'){
+    let header = document.querySelector("#header")
+    header.style.display = 'grid'
+}
+
+}
+
+window.addEventListener('load', menuMResize)
+window.addEventListener('resize', menuMResize)
+
 // Criando a função para menu Hamburguer 
 
 let burguer = document.querySelector("#menu-mobile")

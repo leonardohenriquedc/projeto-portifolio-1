@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url(../midias/imagens/teste-fundo-geral.jpeg);
+    background-image: url(../midias/imagens/teste-fundo-desktop.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -17,37 +17,169 @@ body{
 
 /* Itens do nav */
 
-nav#principal{
+
+/* Itens para manipulação no JS */
+.entreSeisNove{
+    width: 600px;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 20px;
+}
+
+.acimaNove{
     width: 70%;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 20px;
+    justify-content: space-around;
+}
+/*--------------------------------*/
+
+/* nav#principal{
     margin: auto;
     background-color: #2e2e2e;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-}
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 20px;
+} */
 
 span#menu-mobile {
     display: none;
 }
 
-nav#list, ul{
+nav#list{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    
 }
 
-nav#list > ul li{
+nav#list > ul#list-options{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav#list > ul > li{
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
 }
 
 nav#list > ul > li > a{
     text-decoration: none;
-    
+}
+nav#list > ul > li > a:hover{
+    text-decoration: underline;
 }
 
 .icons{
-    width: 50px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Itens do header */
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.headerClass{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header > div#img-d{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+    grid-row: span 4;
+    grid-column: 2;
+    
+
+    /* Animação */
+
+    animation-name: animacaoFoto;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animacaoFoto {
+    0%{
+        transform: rotate(20deg);
+    }
+
+    50%{
+        transform: rotate(-20deg);
+    }
+
+    100%{
+        transform: rotate(20deg);
+    }
+}
+
+header > div:nth-child(2){
+    width: 500px;
+}
+header > div:nth-child(2) > p{
+    font-size: 1.6rem;
+    padding: 20px;
+}
+
+footer{
+    position: absolute;
+    top: calc(100% - 100px);
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > p{
+    font-size: 1.5rem;
+} 
+
+footer > img{
+    color: white;
+    filter: contrast(0%);
 }

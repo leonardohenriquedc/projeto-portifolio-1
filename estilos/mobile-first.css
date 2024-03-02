@@ -177,7 +177,11 @@ header > div#img-d > img{
 }
 /* --------------- */
 
-header > p{
+header > div:nth-child(2){
+    padding: 10px;
+}
+
+header > div > p{
     text-align: justify;
     color: white;
     padding: 20px;

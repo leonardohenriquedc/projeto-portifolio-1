@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=x, initial-scale=1.0">
     <title>My portfolio</title>
-    <link rel="stylesheet" href="estilos/desktop.css" media="(min-width: 601px) and (max-width: 1900px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="(min-width: 601px)">
     <link rel="stylesheet" href="estilos/mobile-first.css" media="(max-width: 600px)">
     <script defer src="js-arquivos/interacoes-desktop.js"></script>
     <script defer src="js-arquivos/interacoes-mobile.js"></script>
 </head>
 <body>
-    <nav id="principal">
+    <nav id="principal"  class="">
         <span id="menu-mobile">
             <div class="line"></div>
             <div class="line"></div>
@@ -18,50 +18,56 @@
         </span>
         <nav id="list" style="display: none;">
             <ul id="list-options">
-                <li id="bt-home">
+                <li id="bt-home" class="" >
                     <img src="midias/icons/home-icon.svg" id="icon-home" class="icons">
-                    <a href="#">
+                    <a href="#" class="name">
                         Home
                     </a>
                 </li>
-                <li id="bt-curriculo">
+                <li id="bt-curriculo" class="button" >
                     <img src="midias/icons/curriculo-icon.svg" id="icon-curriculo" class="icons">
-                    <a href="midias/documentos/Leonardo Curriculo.docx" download="Leonardo%20Curriculo.docx">
+                    <a href="midias/documentos/Leonardo Curriculo.docx" download="Leonardo%20Curriculo.docx" class="name">
                         Currículo
                     </a>
                 </li>
-                <li id="bt-portifolio">
+                <li id="bt-portifolio" class="button" >
                     <img src="midias/icons/projeto-icon.svg" id="icon-portifolio" class="icons"> 
-                    <a href="#">Pórtifolio</a>
+                    <a href="#" class="name">
+                        Pórtifolio
+                    </a>
                 </li>
-                <li id="bt-linkedin">
+                <li id="bt-linkedin" class="button" >
                     <img src="midias/icons/linkedin-icon.png" id="icon-linkedin" class="icons">
-                    <a href="https://www.linkedin.com/in/leonardo-henrique-b82852197/" target="_blank">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/leonardo-henrique-b82852197/" target="_blank">
+                        Linkedin
+                    </a>
                 </li>
-                <li id="bt-curriculo">
+                <li id="bt-curriculo" class="button" >
                     <img src="midias/icons/github-icon.svg" id="github-icon" class="icons">
-                    <a href="https://github.com/leonardohenriquedc" target="_blank">
+                    <a href="https://github.com/leonardohenriquedc" target="_blank" class="name">
                         GitHub
                     </a>
                 </li>
             </ul>
         </nav>
     </nav>
-    <header id="header" style="display: grid;">
+    <header id="header">
         <div id="img-d">
             <img src="midias/avatar/avatar.svg" id="img">
         </div>
 
-        <p>
-            Olá, meu nome e Leonardo Henrique
-            estou atualmente no mercado de front-end pórem pretendo aprimorar meus conhecimentos para ingressar no mercado full-stack.
-        </p>
-        <p>
-            No momento estou aprimorando minhas tecnicas de construção de landpages, afim de construir um portfolio bem como também experiência no mercado.
-        </p>
-        <p>
-            Future developer full-stack
-        </p>
+        <div>
+            <p>
+                Olá, meu nome e Leonardo Henrique
+                estou atualmente no mercado de front-end pórem pretendo aprimorar meus conhecimentos para ingressar no mercado full-stack.
+            </p>
+            <p>
+                No momento estou aprimorando minhas tecnicas de construção de landpages, afim de construir um portfolio bem como também experiência no mercado.
+            </p>
+            <p>
+                Future developer full-stack
+            </p>
+        </div>
     </header>
     <main id="main" style="display: none;">
         <section>
