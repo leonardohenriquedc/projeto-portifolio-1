@@ -69,3 +69,14 @@ function botaoPortifolio(){
 btPortifolio.addEventListener('touchend', botaoPortifolio)
 btPortifolio.addEventListener('click', botaoPortifolio)
 
+
+function bugResize(){
+    if(window.innerWidth <= 600){
+        if(header.style.display === 'grid' && main.style.display === 'flex'){
+            header.style.display = 'none'
+            main.style.display = 'flex'
+        }
+    }
+}
+
+window.addEventListener('resize', bugResize)

@@ -56,7 +56,7 @@ function classHeader(){
     header.style.display =  'flex'
     }
 }
-
+ 
 let botaoHome = document.querySelector("#bt-home")
 botaoHome.addEventListener('click', classHeader)
 
