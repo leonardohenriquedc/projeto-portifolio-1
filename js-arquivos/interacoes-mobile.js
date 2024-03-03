@@ -52,7 +52,7 @@ function botaoHome(){
         }
     }
 }
-
+btHome.addEventListener('touchend', botaoHome)
 btHome.addEventListener('click', botaoHome)
 
 // Função Portifolio 
@@ -66,5 +66,6 @@ function botaoPortifolio(){
     }
 }
 
+btPortifolio.addEventListener('touchend', botaoPortifolio)
 btPortifolio.addEventListener('click', botaoPortifolio)
 
