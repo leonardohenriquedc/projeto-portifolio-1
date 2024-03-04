@@ -6,11 +6,11 @@ let burguer = document.querySelector("#menu-mobile")
 let list = document.querySelector("#list")
 
 function menu(){
-    if(list.style.display === 'none'){
-        list.style.display = 'flex'
+    if(list.classList === 'classListOff'){
+        list.setAttribute('class', 'classListOn')
     }
     else{
-        list.style.display = 'none'
+        list.setAttribute('class', 'classListOff')
     }
 }
 
@@ -57,7 +57,7 @@ btPortifolio.addEventListener('touchend', botaoPortifolio)
 btPortifolio.addEventListener('click', botaoPortifolio)
 
 function menuMResize(){
-    if(window.innerWidth >= '600' && list.style.display === 'none'){
+    if(window.innerWidth >= 600 && list.style.display === 'none'){
         list.style.display = 'grid'
     }
     if(window.innerWidth <= '600'){
@@ -69,8 +69,7 @@ function menuMResize(){
     window.addEventListener('resize', menuMResize)
 
 
-// Remoção para otimização e correção de bug 04.03.2024 // 
-/* 
+
 function bugResize(){
     if(window.innerWidth <= 600){
         if(header.style.display === 'grid' && main.style.display === 'flex'){
@@ -80,7 +79,9 @@ function bugResize(){
     }
 }
 
-window.addEventListener('resize', bugResize) */
+window.addEventListener('resize', bugResize)
+
+// Remoção para otimização e correção de bug 04.03.2024 // 
 
 /* function menuMResize(){
 if(window.innerWidth <= '600'){
@@ -97,3 +98,4 @@ window.addEventListener('load', menuMResize)
 window.addEventListener('resize', menuMResize) */
 
 //-----------------------------------------------------------------//
+

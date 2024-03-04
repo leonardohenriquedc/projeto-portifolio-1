@@ -59,19 +59,30 @@ span#menu-mobile > div.line{
     border-radius: 3px;
 }
 
-nav#list{
-    display: none;
+.listClassOff{
+    display: grid;
     align-items: center;
     justify-content: center;
     padding:10px;
+    position: absolute;
+    left: 50%;
+    top: calc(-223px);
+    transform: translate(-50%);
 }
 
-nav#list > ul#list-options{
-    list-style: none;
-    text-align: center;
+.listClassOn{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    position: absolute;
+    left: 50%;
+    top: calc(40px);
+    transform: translate(-50%);
+
 }
 
-nav#list > ul#list-options > li{
+nav#list > ul#list-options > li.button{
     padding: 4px;
     margin: 3px;
     width: 200px;
@@ -79,23 +90,28 @@ nav#list > ul#list-options > li{
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     color: white;
-    background-image: linear-gradient(to left, #1a47db94, #2A1ADB94);
+    background-image: linear-gradient(to left, #1a47db, #2a1adb);
     display: flex;
     align-items: center;
     justify-content: center;
-
+    border: 1px solid black;
+    list-style: none;
+    text-align: center;
+    
+    
     /* teste de animação */
 
-    animation-name: testeFrame;
+    animation-name: listEntrada;
     animation-duration: 1s;
     animation-delay: 0.2s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
+    
 }
 
-/* Animação para li de #list-options, DOM-click */
+/* Animação para li de #list-options, DOM-click Entrada*/
 
-@keyframes testeFrame {
+@keyframes listEntrada {
     0%{
         transform: translateY(-700%);
     }
@@ -148,6 +164,7 @@ header > div#img-d{
     border-radius: 50%;
     margin: 4px auto;
     box-shadow: 1px 1px 7px #110b52;
+    z-index: -1;
 }
 
 header > div#img-d > img{
