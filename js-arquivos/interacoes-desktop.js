@@ -20,8 +20,6 @@ function menuResize(){
     if(window.innerWidth >= '601' && window.innerWidth <= '900'){
         navp.classList.add('entreSeisNove')
         navp.classList.remove('acimaNove')
-        
-        
     }
     if(window.innerWidth >= 901){
         navp.classList.add('acimaNove')
@@ -30,14 +28,19 @@ function menuResize(){
     }
 }
 
-
 function teste(){
     if(window.innerWidth >= 601){
     list.style.display = 'flex'
     }
+    else{
+        list.style.display = 'none'
+    }
 }
 
-window.addEventListener('load', menuResize, teste)
+window.addEventListener('load', teste)
+window.addEventListener('resize', teste)
+
+window.addEventListener('load', menuResize)
 window.addEventListener('resize', menuResize)
 
 // Ajeitando botao portifolio 
