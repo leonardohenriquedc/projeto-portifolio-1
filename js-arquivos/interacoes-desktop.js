@@ -62,5 +62,3 @@ botaoHome.addEventListener('click', classHeader)
 
 let botaoPortifolio = document.querySelector("#bt-portifolio")
 botaoPortifolio.addEventListener('click', classMain)
-
-

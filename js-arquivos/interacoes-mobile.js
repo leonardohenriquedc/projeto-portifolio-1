@@ -1,4 +1,17 @@
 
+function menuMResize(){
+if(window.innerWidth <= '600'){
+    let header = document.querySelector("#header")
+    header.style.display = 'grid'
+}
+else{
+    list.style.display = 'flex'
+}
+
+}
+
+window.addEventListener('load', menuMResize)
+window.addEventListener('resize', menuMResize)
 
 // Criando a função para menu Hamburguer 
 
@@ -56,6 +69,7 @@ function botaoPortifolio(){
 btPortifolio.addEventListener('touchend', botaoPortifolio)
 btPortifolio.addEventListener('click', botaoPortifolio)
 
+<<<<<<< HEAD
 function menuMResize(){
     if(window.innerWidth >= 600 && list.style.display === 'none'){
         list.style.display = 'grid'
@@ -70,6 +84,9 @@ function menuMResize(){
 
 
 
+=======
+
+>>>>>>> parent of 6939104 (JS 1..3.2)
 function bugResize(){
     if(window.innerWidth <= 600){
         if(header.style.display === 'grid' && main.style.display === 'flex'){
@@ -79,6 +96,7 @@ function bugResize(){
     }
 }
 
+<<<<<<< HEAD
 window.addEventListener('resize', bugResize)
 
 // Remoção para otimização e correção de bug 04.03.2024 // 
@@ -99,3 +117,6 @@ window.addEventListener('resize', menuMResize) */
 
 //-----------------------------------------------------------------//
 
+=======
+window.addEventListener('resize', bugResize)
+>>>>>>> parent of 6939104 (JS 1..3.2)

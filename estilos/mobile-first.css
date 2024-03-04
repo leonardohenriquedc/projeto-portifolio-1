@@ -109,6 +109,7 @@ nav#list > ul#list-options > li.button{
     
 }
 
+<<<<<<< HEAD
 /* Animação para li de #list-options, DOM-click Entrada*/
 
 @keyframes listEntrada {
@@ -123,6 +124,8 @@ nav#list > ul#list-options > li.button{
 
 /*---------------------------------------------*/
 
+=======
+>>>>>>> parent of 6939104 (JS 1..3.2)
 nav#list > ul#list-options > li > a{
     text-decoration: none;
     color: white;
@@ -146,7 +149,19 @@ nav#list > ul#list-options li > a:hover{
 }
 
 
+/* Animação para li de #list-options, DOM-click */
 
+@keyframes testeFrame {
+    0%{
+        transform: translateY(-700%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/*---------------------------------------------*/
 
 /*--------------------------------------------------------------------*/
 
