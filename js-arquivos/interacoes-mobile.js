@@ -79,22 +79,5 @@ function bugResize(){
 
 window.addEventListener('resize', bugResize)
 
-// Remoção para otimização e correção de bug 04.03.2024 // 
-
-/* function menuMResize(){
-if(window.innerWidth <= '600'){
-    let header = document.querySelector("#header")
-    header.style.display = 'grid'
-}
-else{
-    list.style.display = 'flex'
-}
-
-}
-
-window.addEventListener('load', menuMResize)
-window.addEventListener('resize', menuMResize) */
-
-//-----------------------------------------------------------------//
 
 
