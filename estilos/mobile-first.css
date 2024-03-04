@@ -93,6 +93,20 @@ nav#list > ul#list-options > li{
     animation-timing-function: ease-in-out;
 }
 
+/* Animação para li de #list-options, DOM-click */
+
+@keyframes testeFrame {
+    0%{
+        transform: translateY(-700%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/*---------------------------------------------*/
+
 nav#list > ul#list-options > li > a{
     text-decoration: none;
     color: white;
@@ -116,19 +130,7 @@ nav#list > ul#list-options li > a:hover{
 }
 
 
-/* Animação para li de #list-options, DOM-click */
 
-@keyframes testeFrame {
-    0%{
-        transform: translateY(-700%);
-    }
-
-    100%{
-        transform: translateY(0%);
-    }
-}
-
-/*---------------------------------------------*/
 
 /*--------------------------------------------------------------------*/
 
