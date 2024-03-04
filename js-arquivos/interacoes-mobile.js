@@ -5,7 +5,7 @@ if(window.innerWidth <= '600'){
     header.style.display = 'grid'
 }
 else{
-    list.style.display = 'flex'
+    
 }
 
 }
@@ -19,14 +19,13 @@ let burguer = document.querySelector("#menu-mobile")
 let list = document.querySelector("#list")
 
 function menu(){
-    if(list.classList === 'classListOff'){
-        list.setAttribute('class', 'classListOn')
+    if(list.style.display === 'none'){
+        list.style.display = 'grid'
     }
     else{
-        list.setAttribute('class', 'classListOff')
+        list.style.display = 'none'
     }
 }
-
 
 burguer.addEventListener('click', menu)
 
@@ -69,24 +68,6 @@ function botaoPortifolio(){
 btPortifolio.addEventListener('touchend', botaoPortifolio)
 btPortifolio.addEventListener('click', botaoPortifolio)
 
-<<<<<<< HEAD
-function menuMResize(){
-    if(window.innerWidth >= 600 && list.style.display === 'none'){
-        list.style.display = 'grid'
-    }
-    if(window.innerWidth <= '600'){
-        header.style.display = 'grid'
-    }  
-    }
-    
-    window.addEventListener('load', menuMResize)
-    window.addEventListener('resize', menuMResize)
-
-
-
-=======
-
->>>>>>> parent of 6939104 (JS 1..3.2)
 function bugResize(){
     if(window.innerWidth <= 600){
         if(header.style.display === 'grid' && main.style.display === 'flex'){
@@ -96,7 +77,6 @@ function bugResize(){
     }
 }
 
-<<<<<<< HEAD
 window.addEventListener('resize', bugResize)
 
 // Remoção para otimização e correção de bug 04.03.2024 // 
@@ -117,6 +97,4 @@ window.addEventListener('resize', menuMResize) */
 
 //-----------------------------------------------------------------//
 
-=======
-window.addEventListener('resize', bugResize)
->>>>>>> parent of 6939104 (JS 1..3.2)
+

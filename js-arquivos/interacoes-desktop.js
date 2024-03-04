@@ -38,7 +38,7 @@ function teste(){
 }
 
 window.addEventListener('load', menuResize, teste)
-window.addEventListener('resize', menuResize)
+window.addEventListener('resize', menuResize, teste)
 
 // Ajeitando botao portifolio 
 
